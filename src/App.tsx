@@ -42,7 +42,7 @@ function App() {
 		} else {
 			axios
 				.get(
-					`http://api.weatherapi.com/v1/current.json?key=${key}&lang=es&q=${ciudad}`
+					`https://api.weatherapi.com/v1/current.json?key=${key}&lang=es&q=${ciudad}`
 				)
 				.then((response) => response.data)
 				.then((data) => {
